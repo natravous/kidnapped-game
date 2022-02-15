@@ -208,6 +208,8 @@ MonoBehaviour:
   crouchFlag: 0
   pullGrab: 0
   ledgeGrab: 0
+  upTo: 0
+  fall: 1
 --- !u!95 &2922143613898503826
 Animator:
   serializedVersion: 3
