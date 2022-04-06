@@ -892,7 +892,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0014467, y: 1.8951955, z: -10}
+  m_LocalPosition: {x: -3.0014486, y: 1.895185, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2279,8 +2279,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectTypes: 0
-  dialogText: "Tertulis \u201CRuang Generator\u201D. \r\nApa masih ada ruangan yang
-    belum kumasuki?\r\nBanyak sekali ruangan di sini, di mana jalan keluarnya?"
+  dialogText: "Tertulis \u201CRuang Generator\u201D. \r\nPasti ini kunci yang dimaksud.\nBanyak
+    sekali ruangan di sini, di mana jalan keluarnya?"
   audioName: Kunci
   photoSprite: {fileID: 21300000, guid: ee83640a459a3094f8c50c218b6f2efb, type: 3}
   isUIShown: 0
@@ -3248,16 +3248,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2e0e9b9309669a46b1a5bdf0e0109e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Basement
-  description: "Basement dibangun untuk menyimpan beberapa barang yang tidak lagi
-    digunakan. Pada akhirnya basement dijadikan sebagai tempat produksi wine. Walau
-    tidak banyak wine yang diproduksi karena produksi rumahan, tetapi cukup menguntungkan.
-    \r\n\r\nAda ruang generator di basement untuk menyuplai listrik cadangan apabila
-    sumber listrik utama mati. Lokasinya ada di ujung basement. Akan memakan sedikit
-    waktu menuju ke sana. Walau listrik utama mati, listrik di basement tidak akan
-    padam, jadi lampu di basement akan tetap menyala, tetapi arus listrik tidak sanggup
-    untuk menyalakan lift. Jadi, alternatif bisa menggunakan tangga darurat untuk
-    keluar dari basement.\r\n\r\n..."
+  title: Panduan Basement
+  description: "Basement awalnya dibangun untuk menyimpan beberapa barang yang tidak
+    lagi digunakan. Pada akhirnya basement digunakan sebagai tempat produksi wine.\n\rTerdapat
+    ruang generator di ujung basement, akan membutuhkan sedikit waktu untuk sampai
+    ke sana. Listrik di basement tidak akan padam meskipun pasokan listrik utama
+    mati. Jadi, lampu yang berada di basement akan tetap menyala, tapi arus listrik
+    tidak sanggup untuk menyalakan lift. Terdapat tangga darurat apabila lift mati.\r\n\n\rKunci
+    ruang generator ada di lemari.\r"
   dialogText: 
 --- !u!61 &1851491964
 BoxCollider2D:
@@ -3272,7 +3270,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.45374775, y: -0.6905538}
+  m_Offset: {x: -0.015374184, y: -0.7942947}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3283,7 +3281,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.24991798, y: 2.3211076}
+  m_Size: {x: 1.1881618, y: 2.5285895}
   m_EdgeRadius: 0
 --- !u!212 &1851491965
 SpriteRenderer:
@@ -3348,7 +3346,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869837226
 GameObject:

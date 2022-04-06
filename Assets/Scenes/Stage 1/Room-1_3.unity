@@ -2196,7 +2196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.3126907, y: 0.0000009536743, z: 0}
+  m_LocalPosition: {x: -7.298749, y: 0.0000009536743, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5975,17 +5975,20 @@ PrefabInstance:
         generator yang ada di basement.
 
         Generator digunakan untuk menyuplai
-        listrik apabila listrik utama tidak bisa diandalkan.
+        listrik apabila pasokan listrik utama tidak cukup.
 
-        Tarik tuas
-        merah untuk menyalakan generator.
+        Tarik tuas abu-abu
+        untuk menyalakan generator.
 
-        Listrik bisa bertahan kurang lebih
-        selama sebulan.
 
-        Generator bisa menyuplai listrik ke seluruh sudut
-        rumah.
+        Perlu diperhatikan!
 
+        Listrik
+        bisa bertahan kurang lebih selama sebulan, jika lebih dari itu generator
+        akan mati dengan sendirinya.
+
+        Generator bisa menyuplai listrik ke
+        seluruh penjuru rumah.
 
 
         NB: Gunakan listrik sebijak mungkin.'

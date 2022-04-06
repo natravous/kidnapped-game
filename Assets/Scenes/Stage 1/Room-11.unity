@@ -1433,7 +1433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -95.53776, y: 20.42111, z: -10}
+  m_LocalPosition: {x: -95.52425, y: 20.42111, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3030,13 +3030,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146140, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: dialogText
-      value: 'Kode?
+      value: 'Siapa?
 
-        Apa maksudnya itu?'
+        Kode apa?
+
+        Apa maksudnya?'
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146140, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: description
-      value: 'Kode: DMYY'
+      value: '*Jika kau membaca surat ini berarti kau masih hidup.
+
+        
+
+        Akhirnya
+        kau sampai juga di sini. Aku ingin memberitahumu sesuatu. Kalau tidak salah
+        ada sebuah kotak yang kusimpan di gudang. Isinya adalah kenangan kami berdua.
+        Kau bisa membukanya kapanpun kau mau jika kau merindukan kami.
+
+        Kode:
+        HBTT
+
+        Aku yakin kau pasti menemukan kombinasi angka yang tepat.
+
+
+        Maafkan
+        aku, Sam.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
