@@ -2196,7 +2196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.298749, y: 0.0000009536743, z: 0}
+  m_LocalPosition: {x: -4.1992474, y: 0.0000009536743, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4920,7 +4920,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460448774}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -76.8, y: -6.59, z: 0}
+  m_LocalPosition: {x: -66, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5980,18 +5980,16 @@ PrefabInstance:
       value: 'Catatan!!!
 
         Apabila suplai listrik utama padam, gunakanlah
-        generator yang ada di basement.
+        generator yang ada di basement. Generator digunakan untuk menyuplai listrik
+        apabila listrikasokan listrik utama tidak cukup. Tarik tuas abu-abu untuk
+        menyalakan generator.
 
-        Generator digunakan untuk menyuplai
-        listrik apabila listrik utama tidak bisa diandalkan.
 
-        Tarik tuas
-        merah untuk menyalakan generator.
+        Perlu diperhatikan!
 
-        Listrik bisa bertahan kurang lebih
-        selama sebulan.
-
-        Generator bisa menyuplai listrik ke seluruh sudut
+        Listrik bisa
+        bertahan kurang lebih selama sebulan, jika lebih dari itu generator akan
+        mati dengan sendirinya. Generator bisa menyuplai listrik ke seluruh penjuru
         rumah.
 
 
