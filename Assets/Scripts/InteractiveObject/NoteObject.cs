@@ -18,7 +18,7 @@ public class NoteObject : InteractiveObject
         {
             if (!Player.obtainedNotes.ContainsKey(title))
             {
-                Player.obtainedNotes.Add(title, description);
+                Player.obtainedNotes.Add(title, description); //
                 // NoteInventoryManager.Instance.SpawnNoteUI(title);
             }
             GameObject noteUIObj = PopUpUIManager.Instance.ActivateUI("Note");
