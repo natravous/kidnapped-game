@@ -2024,7 +2024,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321714285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.833687, y: 18.924185, z: -10}
+  m_LocalPosition: {x: -13.720275, y: 18.924185, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2637,11 +2637,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146129, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: m_Radius
-      value: 0.6789894
+      value: 0.7767029
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146129, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: m_Offset.x
-      value: -0.28105545
+      value: -0.061210632
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146129, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: m_Offset.y
@@ -2717,16 +2717,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146140, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: title
-      value: Catatan
+      value: Tips
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146140, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: dialogText
-      value: Apa maksudnya?
+      value: Sudah pasti, bukan?
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146140, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: description
-      value: Kamu akan menemukan sebuah kebahagian apabila kamu telah membuka jalan
-        menuju ke sana.
+      value: Jika kamu berkunjung ke sebuah rumah, jangan lupa masuk lewat pintu
+        depan.
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146140, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: promptManager

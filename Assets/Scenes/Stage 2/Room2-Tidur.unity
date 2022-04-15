@@ -642,15 +642,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146140, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: description
-      value: "...\r\n\r\nJumat, 06 Maret 1981\r\n\r\n...\r\n\r\nSabtu, 07 Maret 1981\r\nHari
-        ini, Aku dan Albert berencana untuk memberikan kejutan kepada anak kita tercinta
-        Sam.\r\nKami ingin menyiapkan sebuah pesti kecil-kecilan untuk memperingati
-        ulang tahun Sam.\r\nSemoga berjalan lancar. \r\nAmin.\r\n...\r\n\r\nMinggu,
+      value: "Jumat, 06 Maret 1981\r\n\rAku sudah tidak sabar menunggu hari itu.\n\r\nSabtu,
+        07 Maret 1981\r\nHari ini, Aku dan Albert berencana untuk memberikan kejutan
+        kepada anak kita tercinta Sam.\r\nKami ingin menyiapkan sebuah pesti kecil-kecilan
+        untuk memperingati ulang tahun Sam.\r\nSemoga berjalan lancar. \r\nAmin.\r\n\r\nMinggu,
         08 Maret 1981\r\nAku tidak tahu mengapa Albert tiba-tiba bertingkah aneh.
         \r\nSebelumnya dia tidak seperti itu. \r\nDi saat persiapan pesta pun, dia
         masih terlihat baik-baik saja.\r\nApakah ini pertanda penyakit kejiwaannya
         semakin memburuk?\r\nAku harus bagaiamana?\r\nAku tak tahu lagi harus bertindak
-        seperti apa.\r\nAku takut.\r\n..."
+        seperti apa.\r\nAku takut.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146140, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: promptManager
@@ -1720,7 +1720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321714285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.687798, y: 19.53241, z: -10}
+  m_LocalPosition: {x: -23.574387, y: 19.53241, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

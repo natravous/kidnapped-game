@@ -1808,7 +1808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321714285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.617306, y: 19.067854, z: -10}
+  m_LocalPosition: {x: -13.503862, y: 19.067854, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2246,7 +2246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146140, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: description
-      value: "Seperti kata kebanyakan orang \r\n\u201CKebahagiaan itu harus dicari,
+      value: "Seperti kata kebanyakan orang \r\u201CKebahagiaan itu harus dicari,
         meskipun dalam prosesnya kamu tidak bahagia.\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146140, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}

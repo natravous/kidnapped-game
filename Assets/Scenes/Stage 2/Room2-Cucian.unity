@@ -485,11 +485,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146129, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: m_Radius
-      value: 1.249258
+      value: 1.2947731
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146129, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: m_Offset.x
-      value: 0.52074623
+      value: 0.14751816
       objectReference: {fileID: 0}
     - target: {fileID: 2102418307146146129, guid: 380ba4c14c4650e468fca21189d16a62, type: 3}
       propertyPath: m_Offset.y
@@ -577,13 +577,13 @@ PrefabInstance:
         saya sendiri.\r\nHari ini ketika saya akan mengantarkan makanan untuk Tuan
         yang sedang sakit.\r\nSaya malah mendapatkan mimpi buruk.\r\nSaat saya membuka
         kamar Tuan.\r\nTuan sudah terbujur kaku di lantai dengan seluruh tubuh berlumuran
-        darah.\r\nApa yang sebenarnya terjadi?\r\nSaya sepontan teriak.\r\nSemua
-        pegawai berkumpul menyaksikan kejadian tersebut.\r\nSalah satu pegawai menanyakan
+        darah.\r\nApa yang sebenarnya terjadi?\r\nSaya spontan teriak.\r\nSemua pegawai
+        berkumpul menyaksikan kejadian tersebut.\r\nSalah satu pegawai menanyakan
         keberadaan Nyonya, tapi tidak ditemukan di manapun.\r\nLalu, Pak Ahmad berteriak
         \u201CNyonya ada di sini.\u201D\r\nKami semua langsung menuju ke sana.\r\nTernyata
         Nyoya tergantung di ruang penyimpanan bahan makanan dengan rambut terikat
         ke pengait daging.\r\nSungguh mengerikan, saya tidak bisa berkata apapun.\r\nSaya
-        lemas, saat menulis catatan inipun kaki saya tidak ada hentinya gemetar.\r\nSaya
+        lemas, saat menulis catatan inipun kaki saya tidak berhenti gemetar.\r\nSaya
         tahu bagaimana perasaan Tuan Muda saat ini.\r\nDia pasti merasa hancur ketika
         mengetahui itu semua tepat setelah hari ulang tahunnya.\r\nSetelah kami melapor
         ke kepolisian.\r\nSaya baru sadar kalau Tuan Muda sudah tidak ada di rumah."
@@ -1677,7 +1677,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321714285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.426564, y: 19.542187, z: -10}
+  m_LocalPosition: {x: -12.313153, y: 19.542187, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
