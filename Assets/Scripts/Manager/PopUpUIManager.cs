@@ -25,7 +25,7 @@ public class PopUpUIManager : MonoBehaviour
         - Fungsi tersebut dipanggil pada object masing-masing.
     */
     public GameObject backdrop;
-    public List<GameObject> popUpObjects;
+    public List<GameObject> popUpObjects; //
     public GameObject currentActiveObject;
     private List<GameObject> generatedObjects;
     private Sprite photoSprite;
@@ -167,6 +167,7 @@ public class PopUpUIManager : MonoBehaviour
         for (int i = 0; i < popUpObjects.Count; i++)
         {
             GameObject obj = backdrop.transform.GetChild(i).gameObject;
+            //Debug.Log(obj.name);
             if ("Photo(Clone)" == obj.name)
             {
                 backdrop.SetActive(true);
