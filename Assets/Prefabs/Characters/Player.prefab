@@ -12,7 +12,7 @@ GameObject:
   m_Layer: 0
   m_Name: wallCheck
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -42,7 +42,7 @@ GameObject:
   m_Layer: 0
   m_Name: boxCheck
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5647d602413865b4fa410a6a82b5e1f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 3.5
   jumpVelocity: 250
   ledgeCheck: {fileID: 7140947655883290352}
   wallCheck: {fileID: 4601641541637785409}
@@ -208,6 +208,8 @@ MonoBehaviour:
   crouchFlag: 0
   pullGrab: 0
   ledgeGrab: 0
+  upTo: 0
+  fall: 1
 --- !u!95 &2922143613898503826
 Animator:
   serializedVersion: 3
@@ -366,7 +368,7 @@ GameObject:
   m_Layer: 0
   m_Name: manjat
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -396,7 +398,7 @@ GameObject:
   m_Layer: 0
   m_Name: ledgeCheck
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -426,7 +428,7 @@ GameObject:
   m_Layer: 0
   m_Name: pushCheck
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
