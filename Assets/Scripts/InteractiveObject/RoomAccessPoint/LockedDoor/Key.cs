@@ -6,6 +6,7 @@ public class Key : MonoBehaviour
 {
     [SerializeField]
     private typeKey type;
+    
 
     public enum typeKey
     {

@@ -8,13 +8,24 @@ public class KeyObject : InteractiveObject
     [SerializeField]
     private Key.typeKey type;
 
+    [SerializeField]
+    private Sprite icon;
+
+    public List<Image> gambar = new List<Image>();
+
     public Key.typeKey GetKeyType()
     {
         return type;
     }
 
+    public Sprite Icon()
+    {
+        return icon;
+    }
+
     //[TextArea(5, 100)]
     //public string dialogText;
+
 
     void Awake()
     {
@@ -37,6 +48,8 @@ public class KeyObject : InteractiveObject
         }
         if (Input.GetKeyDown(KeyCode.E) && playerInRange && Player.currentState != Player.PlayerState.JUMPING)
         {
+
+            Debug.Log(type);//
             // PopUpUIManager.Instance.backdrop.transform.GetChild(0).GetComponent<Button>().onClick.AddListener(() => DialogManager.Instance.ShowDialogUI(dialogText));
             //DialogManager.Instance.ShowDialogUI(dialogText);
             // Audio ketika mengambil kunci
