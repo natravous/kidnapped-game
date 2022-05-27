@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class KeyObject : InteractiveObject
 {
     [SerializeField]
+    private ObjectState state;
+
+    [SerializeField]
     private Key.typeKey type;
 
     [SerializeField]
@@ -25,6 +28,8 @@ public class KeyObject : InteractiveObject
 
     //[TextArea(5, 100)]
     //public string dialogText;
+
+    
 
 
     void Awake()
@@ -63,6 +68,13 @@ public class KeyObject : InteractiveObject
             // GetComponent<BoxCollider2D>().enabled = false;
             // this.enabled = false;
             //gameObject.SetActive(false);
+
+            if(CekCounter >= 2 && state == ObjectState.Open) //
+            {
+                Debug.Log("Cek null " + state + ", Cek counter " + CekCounter);
+                gameObject.SetActive(true);
+            }
+            
         }
     }
 }

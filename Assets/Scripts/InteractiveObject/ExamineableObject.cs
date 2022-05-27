@@ -3,6 +3,10 @@ using UnityEngine.UI;
 
 public class ExamineableObject : InteractiveObject
 {
+    ObjectState objState; //
+
+   
+
     public enum ObjectTypes
     {
         FIGURA,
@@ -16,10 +20,24 @@ public class ExamineableObject : InteractiveObject
     public Sprite photoSprite;
     public bool isUIShown = false;
 
+    
+
     void Update()
     {
+        objState = ObjectState.Close; //
         if (Input.GetKeyDown(KeyCode.E) && playerInRange && Player.gameState == Player.GameState.GAMEPLAY && Player.currentState != Player.PlayerState.JUMPING)
         {
+            objState = ObjectState.Open; //
+            Debug.Log("Cek " + objState);
+            CekCounter += 1;
+            Debug.Log("cek counter " + CekCounter);
+
+            if(CekCounter >= 2 && objState == ObjectState.Open) //
+            {
+                Debug.Log("Cek null " + objState + ", Cek counter " + CekCounter);
+                
+            }
+
             if (objectTypes == ObjectTypes.FIGURA)
             {
                 GameObject fotoUI = PopUpUIManager.Instance.ActivateUI(photoSprite);

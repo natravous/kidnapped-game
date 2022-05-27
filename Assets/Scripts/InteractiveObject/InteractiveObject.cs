@@ -4,6 +4,30 @@ public class InteractiveObject : MonoBehaviour
 {
     // public string promptText;
     // public PromptManager promptManager;
+
+    //
+    public enum ObjectState //
+    {
+        Open,
+        Close,
+    }
+
+    ObjectState objectState;
+
+    private int cekCunter; //
+
+    public int CekCounter //
+    {
+        get
+        {
+            return cekCunter;
+        }
+        set
+        {
+            cekCunter = value;
+        }
+    }
+
     protected bool playerInRange = false;
     public bool PlayerInRange
     {
@@ -17,6 +41,7 @@ public class InteractiveObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        objectState = ObjectState.Close;
         StartFunExtension();
         objImg = GetComponent<SpriteRenderer>();
         oriColor = objImg.color;
@@ -24,7 +49,6 @@ public class InteractiveObject : MonoBehaviour
         playerInRange = false;
         // promptManager = FindObjectOfType<PromptManager>();
     }
-
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -40,7 +64,6 @@ public class InteractiveObject : MonoBehaviour
 
             // promptManager.ShowPromtBetter(promptText, gameObject.transform.position);
             playerInRange = (Player.gameState == Player.GameState.GAMEPLAY) ? true : false;
-
         }
     }
 
@@ -73,6 +96,12 @@ public class InteractiveObject : MonoBehaviour
     public virtual void StartFunExtension()
     {
 
+    }
+
+    public virtual bool ChangePosition()
+    {
+        objectState = ObjectState.Close;
+        return true;
     }
 
 }
