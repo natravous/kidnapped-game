@@ -5,26 +5,26 @@ using UnityEngine.UI;
 
 public class KeyObject : InteractiveObject
 {
-    [SerializeField]
-    private ObjectState state;
+    //[SerializeField]
+    //private ObjectState state; //
 
     [SerializeField]
     private Key.typeKey type;
 
-    [SerializeField]
-    private Sprite icon;
+    //[SerializeField]
+    //private Sprite icon;
 
-    public List<Image> gambar = new List<Image>();
+    //public List<Image> gambar = new List<Image>();
 
     public Key.typeKey GetKeyType()
     {
         return type;
     }
 
-    public Sprite Icon()
-    {
-        return icon;
-    }
+    //public Sprite Icon()
+    //{
+    //    return icon;
+    //}
 
     //[TextArea(5, 100)]
     //public string dialogText;
@@ -51,9 +51,11 @@ public class KeyObject : InteractiveObject
             GetComponent<Collider2D>().enabled = false;
             this.enabled = false;
         }
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange && Player.currentState != Player.PlayerState.JUMPING)
+        if (Input.GetKeyDown(KeyCode.E) && playerInRange && Player.currentState != Player.PlayerState.JUMPING
+            ) //&& _state == ObjectState.Close
         {
-
+            //SetState(new AktifState(this));
+            //Debug.Log(_currentState);
             Debug.Log(type);//
             // PopUpUIManager.Instance.backdrop.transform.GetChild(0).GetComponent<Button>().onClick.AddListener(() => DialogManager.Instance.ShowDialogUI(dialogText));
             //DialogManager.Instance.ShowDialogUI(dialogText);
@@ -69,12 +71,14 @@ public class KeyObject : InteractiveObject
             // this.enabled = false;
             //gameObject.SetActive(false);
 
-            if(CekCounter >= 2 && state == ObjectState.Open) //
-            {
-                Debug.Log("Cek null " + state + ", Cek counter " + CekCounter);
-                gameObject.SetActive(true);
-            }
+            //if(CekCounter >= 2 && state == ObjectState.Open) //
+            //{
+            //    Debug.Log("Cek null " + state + ", Cek counter " + CekCounter);
+            //    gameObject.SetActive(true);
+            //}
             
+
+
         }
     }
 }

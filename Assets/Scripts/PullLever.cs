@@ -116,7 +116,7 @@ public class PullLever : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
             dragDisabled = true;
             rect.position = oldPos;
             transform.parent.GetChild(1).GetComponent<Image>().sprite = electricityOnSprite;
-            Player.obtainedKeys.Add(Key.typeKey.Lever);
+            Player.obtainedKeys.Add(Key.typeKey.Lever); //
         }
         lastMousePosition = currentMousePosition;
     }

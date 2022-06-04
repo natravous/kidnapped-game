@@ -6,13 +6,15 @@ public class InteractiveObject : MonoBehaviour
     // public PromptManager promptManager;
 
     //
-    public enum ObjectState //
-    {
-        Open,
-        Close,
-    }
+    //public enum ObjectState //
+    //{
+    //    Open,
+    //    Close,
+    //}
 
-    ObjectState objectState;
+    //public ObjectState _state;
+
+   
 
     private int cekCunter; //
 
@@ -39,15 +41,21 @@ public class InteractiveObject : MonoBehaviour
     protected Color oriColor;
     protected Color enterColor;
     // Start is called before the first frame update
+
+    //
+    //
+    
     void Start()
     {
-        objectState = ObjectState.Close;
-        StartFunExtension();
-        objImg = GetComponent<SpriteRenderer>();
-        oriColor = objImg.color;
-        enterColor = new Color(0.5f, 0.5f, 0.5f, oriColor.a);
-        playerInRange = false;
+        NetralColor();
+        //StartFunExtension();
+        //objImg = GetComponent<SpriteRenderer>();
+        //oriColor = objImg.color;
+        //enterColor = new Color(0.5f, 0.5f, 0.5f, oriColor.a);
+        //playerInRange = false;
         // promptManager = FindObjectOfType<PromptManager>();
+
+        //masukState = GetComponent<FSMAction>();  //
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -59,7 +67,6 @@ public class InteractiveObject : MonoBehaviour
             if (objImg != null)
             {
                 objImg.color = enterColor;
-
             }
 
             // promptManager.ShowPromtBetter(promptText, gameObject.transform.position);
@@ -74,13 +81,21 @@ public class InteractiveObject : MonoBehaviour
             if (objImg != null)
             {
                 objImg.color = oriColor;
-
             }
 
             playerInRange = false;
             PlayerExitFeedback();
             // promptManager.HidePrompt();
         }
+    }
+
+    public void NetralColor()
+    {
+        StartFunExtension();
+        objImg = GetComponent<SpriteRenderer>();
+        oriColor = objImg.color;
+        enterColor = new Color(0.5f, 0.5f, 0.5f, oriColor.a);
+        playerInRange = false;
     }
 
     public virtual void PlayerEnterFeedback()
@@ -98,10 +113,10 @@ public class InteractiveObject : MonoBehaviour
 
     }
 
-    public virtual bool ChangePosition()
-    {
-        objectState = ObjectState.Close;
-        return true;
-    }
+    //public virtual bool ChangePosition() //
+    //{
+    //    _state = ObjectState.Close; //
+    //    return true;
+    //}
 
 }

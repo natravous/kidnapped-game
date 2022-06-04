@@ -3,10 +3,6 @@ using UnityEngine.UI;
 
 public class ExamineableObject : InteractiveObject
 {
-    ObjectState objState; //
-
-   
-
     public enum ObjectTypes
     {
         FIGURA,
@@ -20,23 +16,39 @@ public class ExamineableObject : InteractiveObject
     public Sprite photoSprite;
     public bool isUIShown = false;
 
-    
+    //
+    protected ObjectState _currentState; // reference to the active state
+    //isntantiate a new state below
+    public AktifState aktifState = new AktifState();
+    public NonAktifState nonAktifState = new NonAktifState();
+
+    public void SetState(ObjectState state)
+    {
+        _currentState = state;
+        _currentState.EnterState(this);
+    }
+    public void SwitchState(ObjectState state)
+    {
+        _currentState = state;
+        state.EnterState(this);
+    }
+
+    private void Start()
+    {
+        NetralColor();
+        SetState(nonAktifState); // set state
+    }
 
     void Update()
     {
-        objState = ObjectState.Close; //
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange && Player.gameState == Player.GameState.GAMEPLAY && Player.currentState != Player.PlayerState.JUMPING)
-        {
-            objState = ObjectState.Open; //
-            Debug.Log("Cek " + objState);
-            CekCounter += 1;
-            Debug.Log("cek counter " + CekCounter);
+        _currentState.UpdateState(this);
 
-            if(CekCounter >= 2 && objState == ObjectState.Open) //
-            {
-                Debug.Log("Cek null " + objState + ", Cek counter " + CekCounter);
-                
-            }
+        if (Input.GetKeyDown(KeyCode.E) && playerInRange && Player.gameState == Player.GameState.GAMEPLAY && Player.currentState != Player.PlayerState.JUMPING
+            ) 
+        {
+
+            //_currentState.UpdateState(this);
+
 
             if (objectTypes == ObjectTypes.FIGURA)
             {
@@ -50,7 +62,42 @@ public class ExamineableObject : InteractiveObject
             {
                 DialogManager.Instance.ShowDialogUI(dialogText);
             }
+
+            //if (gameObject.name == "Lemari2")
+            //{
+            //    _state = ObjectState.Close;
+
+            //    if(CekCounter == 3)
+            //    {
+            //        _state = ObjectState.Open;
+            //    }
+            //}
+
+            //if (gameObject.name == "Botol2" && _currentState == nonAktifState)
+            //{
+                
+            //    CekCounter++;
+            //    Debug.Log(CekCounter);
+
+            //    if(gameObject.name == "Lemari2" && CekCounter != 2)
+            //    {
+            //        SetState(aktifState);
+            //    } 
+
+            //}
+            //if (gameObject.name == "Lemari2")
+            //{
+            //    _state = ObjectState.Open;
+
+            //    if (CekCounter <= 4)
+            //    {
+            //        _state = ObjectState.Close;
+            //    }
+            //}
+
         }
+
+
     }
 
 
