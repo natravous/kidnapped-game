@@ -29,9 +29,6 @@ public class KeyObject : InteractiveObject
     //[TextArea(5, 100)]
     //public string dialogText;
 
-    
-
-
     void Awake()
     {
         if (Player.obtainedKeys.Contains(GetKeyType()))
@@ -57,6 +54,7 @@ public class KeyObject : InteractiveObject
             //SetState(new AktifState(this));
             //Debug.Log(_currentState);
             Debug.Log(type);//
+
             // PopUpUIManager.Instance.backdrop.transform.GetChild(0).GetComponent<Button>().onClick.AddListener(() => DialogManager.Instance.ShowDialogUI(dialogText));
             //DialogManager.Instance.ShowDialogUI(dialogText);
             // Audio ketika mengambil kunci

@@ -16,11 +16,11 @@ public class AktifState : ObjectState
 
     public override void EnterState(ExamineableObject objek)
     {
-        //Debug.Log("Hello, Check Aktif! " + objek.name);
+        Debug.Log("Hello, Check Aktif! " + objek.name);
     }
 
     public override void UpdateState(ExamineableObject objek)
     {
-        //Debug.Log("Sudah Aktif nih! " + objek.name);
+        Debug.Log("Sudah Aktif nih! " + objek.name);
     }
 }

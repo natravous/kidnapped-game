@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class NonAktifState : ObjectState
 {
-    private ItemDictionary items = new ItemDictionary();
     //public NonAktifState(InteractiveObject objek) : base(objek)
     //{
     //}
@@ -27,10 +26,7 @@ public class NonAktifState : ObjectState
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Ganti state! " + objek.name);
-            if (objek.TryGetComponent(out KeyObject key))
-            {
-                items.addToDict(key.GetKeyType().ToString(), objek.photoSprite);
-            }
+            
             objek.SwitchState(objek.aktifState); // ganti state
         }
     }

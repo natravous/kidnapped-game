@@ -9,6 +9,9 @@ public class ExamineableObject : InteractiveObject
         COMMON
     }
 
+    private ItemDictionary items = new ItemDictionary();
+
+
     public ObjectTypes objectTypes;
     [TextArea(5, 100)]
     public string dialogText;
@@ -48,7 +51,10 @@ public class ExamineableObject : InteractiveObject
         {
 
             //_currentState.UpdateState(this);
-
+            if (this.TryGetComponent(out KeyObject key))
+            {
+                items.addToDict(key.GetKeyType().ToString(), this.photoSprite);
+            }
 
             if (objectTypes == ObjectTypes.FIGURA)
             {

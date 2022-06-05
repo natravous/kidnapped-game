@@ -5,8 +5,8 @@ using UnityEngine;
 public abstract class ObjectState
 {
     // ubah 
-    public abstract void EnterState(ExamineableObject objek);
-    public abstract void UpdateState(ExamineableObject objek);
+    public virtual void EnterState(ExamineableObject objek) { }
+    public virtual void UpdateState(ExamineableObject objek) { }
 
     //protected readonly InteractiveObject _objek;
 
