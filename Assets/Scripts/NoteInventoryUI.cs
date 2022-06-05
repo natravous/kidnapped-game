@@ -12,6 +12,7 @@ public class NoteInventoryUI : MonoBehaviour
 
     public GameObject pocketItem;
     public GameObject pocketItemParent;
+    private ItemDictionary items = new ItemDictionary();
 
   
     private List<string> generatedNote = new List<string>();
@@ -63,12 +64,13 @@ public class NoteInventoryUI : MonoBehaviour
                 //KeyObject objKunci = gameObject.GetComponent<KeyObject>();//
                 obj.transform.gameObject.GetComponent<Button>().onClick.AddListener(() => 
                 {
-                    ShowImage(obj);
+                    //ShowImage(obj);
+                    GameObject fotoUI = PopUpUIManager.Instance.ActivateUI(items.getImage(kunci.ToString()));
 
                 });
                 obj.transform.GetChild(0).gameObject.GetComponent<Text>().text = Space(kunci.ToString());
                 //Debug.Log("HALLO KUNCI:" + objKey.ToString());
-                //obj.transform.GetChild(1).gameObject.GetComponent<Image>().sprite = objKunci.Icon();
+                obj.transform.GetChild(1).gameObject.GetComponent<Image>().sprite = items.getImage(kunci.ToString());
                 generatedKey.Add(kunci.ToString());
             }
             

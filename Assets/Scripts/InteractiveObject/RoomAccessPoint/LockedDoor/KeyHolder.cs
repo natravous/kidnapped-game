@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class KeyHolder : MonoBehaviour
 {
     private List<Key.typeKey> typeList;
+    private ItemDictionary items = new ItemDictionary();
 
     private void Awake()
     {
@@ -14,6 +16,7 @@ public class KeyHolder : MonoBehaviour
     public void AddKey(Key.typeKey typeKey)
     {
         Debug.Log("ADD KEY " + typeKey);
+        
         typeList.Add(typeKey);
     }
 
