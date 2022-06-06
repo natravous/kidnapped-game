@@ -34,4 +34,33 @@ public class ItemDictionary
     {
         return itemdict;
     }
+
+    //// Item dictionary
+    //static private Dictionary<Key.typeKey, Sprite> keyItems = new Dictionary<Key.typeKey, Sprite>();
+    //static private Dictionary<string, Sprite> spriteItems = new Dictionary<string, Sprite>();
+
+    //public Sprite GetSprite(Key.typeKey key)
+    //{
+    //    return keyItems[key];
+    //}
+    //public Sprite GetSprite(string key)
+    //{
+    //    return spriteItems[key];
+    //}
+    //public void Add(Key.typeKey key, Sprite spr)
+    //{
+    //    if (keyItems.ContainsKey(key))
+    //    {
+    //        return;
+    //    }
+    //    keyItems.Add(key, spr);
+    //}
+    //public void Add(string key, Sprite spr)
+    //{
+    //    if (spriteItems.ContainsKey(key))
+    //    {
+    //        return;
+    //    }
+    //    spriteItems.Add(key, spr);
+    //}
 }
