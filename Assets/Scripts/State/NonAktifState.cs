@@ -13,21 +13,32 @@ public class NonAktifState : ObjectState
     //    Debug.Log("Cek nonaktif state");
     //    _objek.SetState(new AktifState(_objek));
     //}
-    public override void EnterState(ExamineableObject objek)
+
+    
+    public override void EnterState(ObjectScript objek)
     {
-        Debug.Log(objek.name + " Tidak Aktif!");
+        Debug.Log(objek.namaObjek + " Tidak Aktif!");
     }
 
-    public override void UpdateState(ExamineableObject objek)
+    public override void UpdateState(ObjectScript objek)
     {
         //Debug.Log("Aktivasi " + objek.name);
         
         //objek.SwitchState(objek.aktifState);
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && objek.objectName == ObjectScript.ObjectName.Botol && objek.isActive == false)
         {
-            Debug.Log("Ganti state! " + objek.name);
+            objek.isActive = true;
+            
+            
+
+            Debug.Log("Ganti state! " + objek.namaObjek);
             
             objek.SwitchState(objek.aktifState); // ganti state
+
+        }
+        if (Input.GetKeyDown(KeyCode.E) && objek.objectName == ObjectScript.ObjectName.Lemari && objek.isActive == false)
+        {
+            Debug.Log("LEmari bego");
         }
     }
 

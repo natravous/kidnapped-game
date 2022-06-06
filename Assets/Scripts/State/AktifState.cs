@@ -14,13 +14,15 @@ public class AktifState : ObjectState
     //    _objek.SetState(new NonAktifState(_objek));
     //}
 
-    public override void EnterState(ExamineableObject objek)
+    public override void EnterState(ObjectScript objek)
     {
-        Debug.Log("Hello, Check Aktif! " + objek.name);
+        Debug.Log("Hello, Check Aktif! " + objek.namaObjek);
     }
 
-    public override void UpdateState(ExamineableObject objek)
+    public override void UpdateState(ObjectScript objek)
     {
-        Debug.Log("Sudah Aktif nih! " + objek.name);
+        Debug.Log("Sudah Aktif nih! " + objek.namaObjek);
+
+        
     }
 }

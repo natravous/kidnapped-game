@@ -20,31 +20,11 @@ public class ExamineableObject : InteractiveObject
     public bool isUIShown = false;
 
     //
-    protected ObjectState _currentState; // reference to the active state
-    //isntantiate a new state below
-    public AktifState aktifState = new AktifState();
-    public NonAktifState nonAktifState = new NonAktifState();
-
-    public void SetState(ObjectState state)
-    {
-        _currentState = state;
-        _currentState.EnterState(this);
-    }
-    public void SwitchState(ObjectState state)
-    {
-        _currentState = state;
-        state.EnterState(this);
-    }
-
-    private void Start()
-    {
-        NetralColor();
-        SetState(nonAktifState); // set state
-    }
+    
 
     void Update()
     {
-        _currentState.UpdateState(this);
+       
 
         if (Input.GetKeyDown(KeyCode.E) && playerInRange && Player.gameState == Player.GameState.GAMEPLAY && Player.currentState != Player.PlayerState.JUMPING
             ) 
