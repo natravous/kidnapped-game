@@ -14,7 +14,6 @@ public class NonAktifState : ObjectState
     //    _objek.SetState(new AktifState(_objek));
     //}
 
-    
     public override void EnterState(ObjectScript objek)
     {
         Debug.Log(objek.namaObjek + " Tidak Aktif!");
@@ -22,24 +21,28 @@ public class NonAktifState : ObjectState
 
     public override void UpdateState(ObjectScript objek)
     {
+
+        //objek.kunci.enabled = false;
+        //objek.obj.enabled = false;
         //Debug.Log("Aktivasi " + objek.name);
-        
+
         //objek.SwitchState(objek.aktifState);
         if (Input.GetKeyDown(KeyCode.E) && objek.objectName == ObjectScript.ObjectName.Botol && objek.isActive == false)
         {
             objek.isActive = true;
-            
-            
+
+            objek.kunci.enabled = true;
+            objek.obj.enabled = true;
 
             Debug.Log("Ganti state! " + objek.namaObjek);
             
             objek.SwitchState(objek.aktifState); // ganti state
 
         }
-        if (Input.GetKeyDown(KeyCode.E) && objek.objectName == ObjectScript.ObjectName.Lemari && objek.isActive == false)
-        {
-            Debug.Log("LEmari bego");
-        }
+        //else if (Input.GetKeyDown(KeyCode.E) && objek.objectName == ObjectScript.ObjectName.Lemari && objek.isActive == false)
+        //{
+        //    Debug.Log("LEmari bego");
+        //}
     }
 
    

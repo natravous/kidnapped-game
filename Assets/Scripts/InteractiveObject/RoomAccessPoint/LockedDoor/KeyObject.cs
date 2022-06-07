@@ -74,9 +74,13 @@ public class KeyObject : InteractiveObject
             //    Debug.Log("Cek null " + state + ", Cek counter " + CekCounter);
             //    gameObject.SetActive(true);
             //}
-            
-
-
         }
+
+
+    }
+
+    public void isAktif()
+    {
+        
     }
 }
