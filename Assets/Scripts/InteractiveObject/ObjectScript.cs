@@ -36,7 +36,8 @@ public class ObjectScript : InteractiveObject
     public KeyObject kunci;
     public ExamineableObject obj;
 
-    
+    public int counter = 0;
+
 
     protected ObjectState _currentState; // reference to the active state
     //isntantiate a new state below
@@ -63,11 +64,10 @@ public class ObjectScript : InteractiveObject
     private void Start()
     {
         
-
         NetralColor();
         SetState(nonAktifState); // set state
 
-
+        
         kunci.enabled = false;
         obj.enabled = false;
     }
@@ -77,4 +77,6 @@ public class ObjectScript : InteractiveObject
     }
 
     
+
+
 }

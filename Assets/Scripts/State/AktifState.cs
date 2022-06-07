@@ -22,7 +22,19 @@ public class AktifState : ObjectState
     public override void UpdateState(ObjectScript objek)
     {
         Debug.Log("Sudah Aktif nih! " + objek.namaObjek);
+        
 
+        if (objek.counter >= 3)
+        {
+            objek.kunci.enabled = true;
+            objek.obj.enabled = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && objek.PlayerInRange == true && objek.objectName == ObjectScript.ObjectName.Botol && objek.isActive == true)
+        {
+            objek.counter++;
+            Debug.Log(objek.counter);
+        }
         
     }
 }
