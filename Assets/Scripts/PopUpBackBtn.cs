@@ -57,6 +57,8 @@ public class PopUpBackBtn : MonoBehaviour
         secondParent = firstParent.transform.parent.gameObject;
         firstParent.transform.position = PopUpUIManager.Instance.OriPos();
         firstParent.SetActive(false);
-        secondParent.SetActive(false);
+
+        // Solution for Inventory close
+        //secondParent.SetActive(false);
     }
 }

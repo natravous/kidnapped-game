@@ -17,7 +17,9 @@ public class NoteInventoryUI : MonoBehaviour
   
     private List<string> generatedNote = new List<string>();
     //
-    private List<string> generatedKey = new List<string>();
+    private List<Key.typeKey> generatedKey = new List<Key.typeKey>();
+
+    private List<Map.MapObj> generatedMap = new List<Map.MapObj>();
 
     [SerializeField]
     private Color originalColor;
@@ -58,32 +60,47 @@ public class NoteInventoryUI : MonoBehaviour
         //
         foreach (Key.typeKey kunci in Player.obtainedKeys) //
         {
-            if (!generatedKey.Contains(kunci.ToString()))
+            if (!generatedKey.Contains(kunci))
             {
                 GameObject obj = Instantiate(pocketItem, Vector3.zero, Quaternion.identity, pocketItemParent.transform);
-                //KeyObject objKunci = gameObject.GetComponent<KeyObject>();//
+                Sprite objSprite = items.GetSprite(kunci);
                 obj.transform.gameObject.GetComponent<Button>().onClick.AddListener(() => 
                 {
-                    //ShowImage(obj);
-                    GameObject fotoUI = PopUpUIManager.Instance.ActivateUI(items.getImage(kunci.ToString()));
-
+                    PopUpUIManager.Instance.ActivateUI(objSprite);
+                    
                 });
                 obj.transform.GetChild(0).gameObject.GetComponent<Text>().text = Space(kunci.ToString());
-                //Debug.Log("HALLO KUNCI:" + objKey.ToString());
-                obj.transform.GetChild(1).gameObject.GetComponent<Image>().sprite = items.getImage(kunci.ToString());
-                generatedKey.Add(kunci.ToString());
+                float oriRect = obj.transform.GetChild(1).gameObject.GetComponent<Image>().rectTransform.rect.width;
+                obj.transform.GetChild(1).gameObject.GetComponent<Image>().sprite = objSprite;
+                generatedKey.Add(kunci);
             }
             
             Debug.Log("Kunci yang sudah diambil: " + kunci.ToString()); //
+        } 
+
+        // Generate Maps
+        foreach (Map.MapObj map in Player.obtainedMaps)
+        {
+            if (!generatedMap.Contains(map))
+            {
+                GameObject obj = Instantiate(pocketItem, Vector3.zero, Quaternion.identity, pocketItemParent.transform);
+                obj.transform.gameObject.GetComponent<Button>().onClick.AddListener(() =>
+                {
+                    PopUpUIManager.Instance.ActivateUI(items.GetSprite(map));
+                });
+                obj.transform.GetChild(0).gameObject.GetComponent<Text>().text = Space(map.ToString());
+                obj.transform.GetChild(1).gameObject.GetComponent<Image>().sprite = items.GetSprite(map);
+                generatedMap.Add(map);
+            }
         }
 
     }
 
-    public void ShowImage(GameObject obj)
-    {
-        Debug.Log(obj.transform.GetChild(1).gameObject.GetComponent<Image>().sprite);
-        GameObject fotoUI = PopUpUIManager.Instance.ActivateUI(obj.transform.GetChild(1).gameObject.GetComponent<Image>().sprite);
-    }
+    //public void ShowImage(GameObject obj)
+    //{
+    //    Debug.Log(obj.transform.GetChild(1).gameObject.GetComponent<Image>().sprite);
+    //    GameObject fotoUI = PopUpUIManager.Instance.ActivateUI(obj.transform.GetChild(1).gameObject.GetComponent<Image>().sprite);
+    //}
 
     private string Space(string text)
     {

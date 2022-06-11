@@ -29,7 +29,12 @@ public class NonAktifState : ObjectState
             Debug.Log("Ganti state! " + objek.name);
             if (objek.TryGetComponent(out KeyObject key))
             {
-                items.addToDict(key.GetKeyType().ToString(), objek.photoSprite);
+                items.Add(key.GetKeyType(), objek.photoSprite);
+            }
+
+            else if (objek.TryGetComponent(out MapObject map))
+            {
+                items.Add(map.GetMapObj(), objek.photoSprite);
             }
             objek.SwitchState(objek.aktifState); // ganti state
         }

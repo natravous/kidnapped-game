@@ -27,6 +27,9 @@ public class PopUpUIManager : MonoBehaviour
     public GameObject backdrop;
     public List<GameObject> popUpObjects; //
     public GameObject currentActiveObject;
+
+    public GameObject currentActiveItem;
+
     private List<GameObject> generatedObjects;
     private Sprite photoSprite;
     public bool isPopUpActive = false;
@@ -195,12 +198,15 @@ public class PopUpUIManager : MonoBehaviour
     {
         if (Player.gameState == Player.GameState.MENU)
         {
+            
+            Player.gameState = Player.GameState.GAMEPLAY;
+            
             // currentActiveObject.SetActive(false);
             // backdrop.SetActive(false);
             //backBtn.gameObject.SetActive(true);
             // Destroy(realButton.gameObject);
             // currentActiveObject = null;
-            Player.gameState = Player.GameState.GAMEPLAY;
+            //Player.gameState = Player.GameState.GAMEPLAY;
             // DialogManager.Instance.ShowDialogUI("Blabla");
 
         }
@@ -240,5 +246,45 @@ public class PopUpUIManager : MonoBehaviour
         rect.position = oriPos;
         return true;
     }
+
+    //public GameObject ActivateUIItems(Sprite spr)
+    //{
+    //    GameObject obj = backdrop.transform.Find("Photo(Clone)").gameObject;
+    //    backdrop.SetActive(true);
+    //    obj.GetComponent<Image>().sprite = spr;
+    //    obj.SetActive(true);
+    //    currentActiveItem = obj;
+
+    //    StartCoroutine(PopUpAnim(currentActiveItem.GetComponent<RectTransform>()));
+
+    //    return currentActiveItem;
+    //}
 }
+
+/*
+ * 
+ * 
+
+                backdrop.SetActive(true);
+                obj.GetComponent<Image>().sprite = img;
+                obj.SetActive(true);
+                currentActiveObject = obj;
+                // isAnimEnd = PopUpAnimation(currentActiveObject.GetComponent<RectTransform>());
+                StartCoroutine(PopUpAnim(currentActiveObject.GetComponent<RectTransform>()));
+                // if (name == "PauseMenu")
+                // {
+                //     // backBtn.gameObject.SetActive(false);
+                //     currentActiveObject.transform.GetChild(0).GetComponent<Button>().onClick.AddListener(() =>
+                //     {
+                //         DeactivateUI();
+                //     });
+                // }
+                return currentActiveObject;
+            }
+        }
+        return null;
+
+ 
+ 
+ */
 

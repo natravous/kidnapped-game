@@ -1,66 +1,88 @@
 ﻿using System.Collections.Generic;
-using UnityEngine.UI;
+using System.Linq;
 using UnityEngine;
 
 public class ItemDictionary
 {
-    static private Dictionary<string, Sprite> itemdict = new Dictionary<string, Sprite>();
+    //static private Dictionary<string, Sprite> itemdict = new Dictionary<string, Sprite>();
 
-    public Sprite getImage(string key)
+    //public Sprite getImage(string key)
+    //{
+    //    return itemdict[key];
+    //}
+
+    //public void addToDict(string key, Sprite img)
+    //{
+    //    if (this.isKey(key) == true)
+    //    {
+    //        return;
+    //    }
+    //    itemdict.Add(key, img);
+    //}
+
+    //public bool isKey(string key)
+    //{
+    //    return itemdict.ContainsKey(key);
+    //}
+
+    //public int totalItems()
+    //{
+    //    return itemdict.Count;
+    //}
+
+    //public Dictionary<string, Sprite> getDict()
+    //{
+    //    return itemdict;
+    //}
+
+    // Item dictionary
+    static private Dictionary<Key.typeKey, Sprite> keyItems = new Dictionary<Key.typeKey, Sprite>();
+    static private Dictionary<Map.MapObj, Sprite> mapItems = new Dictionary<Map.MapObj, Sprite>();
+
+    public List<Key.typeKey> GetKeys()
+    // Get List of Keys that already stored by player
     {
-        return itemdict[key];
+        return keyItems.Keys.ToList();
     }
-
-    public void addToDict(string key, Sprite img)
+    public List<Map.MapObj> GetMaps()
+    // Get List of Maps that already stored by player
     {
-        if (this.isKey(key) == true)
+        return mapItems.Keys.ToList();
+    }
+    public Sprite GetSprite(Key.typeKey key)
+    // Get sprite object from the key
+    {
+        return keyItems[key];
+    }
+    public Sprite GetSprite(Map.MapObj map)
+    // Get sprite object from the map
+    {
+        return mapItems[map];
+    }
+    public bool Contains(Key.typeKey key)
+    {
+        return keyItems.ContainsKey(key);
+    }
+    public bool Contains(Map.MapObj map)
+    {
+        return mapItems.ContainsKey(map);
+    }
+    public void Add(Key.typeKey key, Sprite sprite)
+    {
+        if (this.Contains(key))
         {
             return;
         }
-        itemdict.Add(key, img);
+        keyItems.Add(key, sprite);
     }
-
-    public bool isKey(string key)
+    public void Add(Map.MapObj map, Sprite sprite)
     {
-        return itemdict.ContainsKey(key);
+        if (this.Contains(map))
+        {
+            return;
+        }
+        mapItems.Add(map, sprite);
+
     }
 
-    public int totalItems()
-    {
-        return itemdict.Count;
     }
-
-    public Dictionary<string, Sprite> getDict()
-    {
-        return itemdict;
-    }
-
-    //// Item dictionary
-    //static private Dictionary<Key.typeKey, Sprite> keyItems = new Dictionary<Key.typeKey, Sprite>();
-    //static private Dictionary<string, Sprite> spriteItems = new Dictionary<string, Sprite>();
-
-    //public Sprite GetSprite(Key.typeKey key)
-    //{
-    //    return keyItems[key];
-    //}
-    //public Sprite GetSprite(string key)
-    //{
-    //    return spriteItems[key];
-    //}
-    //public void Add(Key.typeKey key, Sprite spr)
-    //{
-    //    if (keyItems.ContainsKey(key))
-    //    {
-    //        return;
-    //    }
-    //    keyItems.Add(key, spr);
-    //}
-    //public void Add(string key, Sprite spr)
-    //{
-    //    if (spriteItems.ContainsKey(key))
-    //    {
-    //        return;
-    //    }
-    //    spriteItems.Add(key, spr);
-    //}
-}
