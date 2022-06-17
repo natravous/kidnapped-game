@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 37313634}
   - component: {fileID: 37313636}
   - component: {fileID: 37313635}
+  - component: {fileID: 37313637}
   m_Layer: 0
   m_Name: bottle (2)
   m_TagString: Untagged
@@ -297,7 +298,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3327675, y: 0}
+  m_Offset: {x: -0.018909454, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -308,7 +309,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5431862, y: 1.13}
+  m_Size: {x: 2.24654, y: 1.13}
   m_EdgeRadius: 0
 --- !u!114 &37313636
 MonoBehaviour:
@@ -327,6 +328,24 @@ MonoBehaviour:
   audioName: 
   photoSprite: {fileID: 0}
   isUIShown: 0
+--- !u!114 &37313637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37313632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd37b86ba0bb32a4a84001559b7c6a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namaObjek: Botol Wine
+  isActive: 0
+  objectName: 2
+  kunci: {fileID: 1387194961}
+  obj: {fileID: 1387194960}
+  counter: 0
 --- !u!1 &55768728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,7 +2895,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387194957}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f0359326d9dabf4cb87b4078d7537ca, type: 3}
   m_Name: 
@@ -2893,7 +2912,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387194957}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e464aa6ade1596343927e5201ad5e674, type: 3}
   m_Name: 

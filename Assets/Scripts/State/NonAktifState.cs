@@ -13,6 +13,8 @@ public class NonAktifState : ObjectState
     //    Debug.Log("Cek nonaktif state");
     //    _objek.SetState(new AktifState(_objek));
     //}
+
+
     
     public override void EnterState(ObjectScript objek)
     {
@@ -27,6 +29,8 @@ public class NonAktifState : ObjectState
         //Debug.Log("Aktivasi " + objek.name);
 
         //objek.SwitchState(objek.aktifState);
+
+        // Objek Botol
         if (Input.GetKeyDown(KeyCode.E) && objek.PlayerInRange == true && objek.objectName == ObjectScript.ObjectName.Botol && objek.isActive == false)
         {
             objek.isActive = true;
@@ -41,7 +45,21 @@ public class NonAktifState : ObjectState
             objek.SwitchState(objek.aktifState); // ganti state
 
         }
-        
+
+        // Objek Note
+        if (Input.GetKeyDown(KeyCode.E) && objek.PlayerInRange == true && objek.objectName == ObjectScript.ObjectName.Note && objek.isActive == false)
+        {
+            objek.isActive = true;
+
+            objek.counter++;
+
+            Debug.Log(objek.counter);
+            Debug.Log("Ganti state! " + objek.namaObjek);
+            objek.SwitchState(objek.aktifState); // ganti state
+
+        }
+
+
         //else if (Input.GetKeyDown(KeyCode.E) && objek.objectName == ObjectScript.ObjectName.Lemari && objek.isActive == false)
         //{
         //    Debug.Log("LEmari bego");

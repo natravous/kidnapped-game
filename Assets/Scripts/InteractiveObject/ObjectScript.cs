@@ -25,7 +25,7 @@ public class ObjectScript : InteractiveObject
         Lemari,
         Patung,
         Botol,
-        Kunci,
+        Note,
         Pintu
     }
 
@@ -36,6 +36,7 @@ public class ObjectScript : InteractiveObject
     public KeyObject kunci;
     public ExamineableObject obj;
 
+    [HideInInspector]
     public int counter = 0;
 
 

@@ -166,9 +166,9 @@ GameObject:
   m_Component:
   - component: {fileID: 53823671}
   - component: {fileID: 53823672}
+  - component: {fileID: 53823673}
   - component: {fileID: 53823674}
   - component: {fileID: 53823675}
-  - component: {fileID: 53823673}
   m_Layer: 0
   m_Name: Lemari2
   m_TagString: Untagged
@@ -254,7 +254,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.44305897, y: 0}
+  m_Offset: {x: -0.06597942, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -265,7 +265,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7893257, y: 7.65}
+  m_Size: {x: 2.5434847, y: 7.65}
   m_EdgeRadius: 0
 --- !u!114 &53823674
 MonoBehaviour:
@@ -274,14 +274,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53823670}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e464aa6ade1596343927e5201ad5e674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  icon: {fileID: 21300000, guid: ee83640a459a3094f8c50c218b6f2efb, type: 3}
-  gambar: []
 --- !u!114 &53823675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +287,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53823670}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f0359326d9dabf4cb87b4078d7537ca, type: 3}
   m_Name: 
@@ -2912,6 +2910,7 @@ GameObject:
   - component: {fileID: 1432616230}
   - component: {fileID: 1432616231}
   - component: {fileID: 1432616232}
+  - component: {fileID: 1432616233}
   m_Layer: 0
   m_Name: Kertas2
   m_TagString: Untagged
@@ -3040,6 +3039,24 @@ MonoBehaviour:
     suara itu. Kurasa hari ini adalah hari terakhirku berkerja di tempat pengolahan
     wine ini. Aku akan segera menyusulmu Sid, tunggu aku.'
   dialogText: 
+--- !u!114 &1432616233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432616228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd37b86ba0bb32a4a84001559b7c6a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namaObjek: Note
+  isActive: 0
+  objectName: 3
+  kunci: {fileID: 53823674}
+  obj: {fileID: 53823675}
+  counter: 0
 --- !u!1 &1452059346
 GameObject:
   m_ObjectHideFlags: 0

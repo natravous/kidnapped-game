@@ -24,17 +24,37 @@ public class AktifState : ObjectState
         Debug.Log("Sudah Aktif nih! " + objek.namaObjek);
         
 
-        if (objek.counter >= 3)
-        {
-            objek.kunci.enabled = true;
-            objek.obj.enabled = true;
-        }
-
+        //if (objek.counter >= 10)
+        //{
+        //    objek.kunci.enabled = true;
+        //    objek.obj.enabled = true;
+        //}
+        
+        // Objek Botol
         if (Input.GetKeyDown(KeyCode.E) && objek.PlayerInRange == true && objek.objectName == ObjectScript.ObjectName.Botol && objek.isActive == true)
         {
             objek.counter++;
             Debug.Log(objek.counter);
+            if (objek.counter >= 4)
+            {
+                objek.kunci.enabled = true;
+                objek.obj.enabled = true;
+            }
         }
-        
+
+        // Objek Note
+        if (Input.GetKeyDown(KeyCode.E) && objek.PlayerInRange == true && objek.objectName == ObjectScript.ObjectName.Note && objek.isActive == true)
+        {
+            objek.counter++;
+            Debug.Log(objek.counter);
+            if (objek.counter >= 4)
+            {
+                objek.kunci.enabled = true;
+                objek.obj.enabled = true;
+            }
+        }
+
+
+
     }
 }
