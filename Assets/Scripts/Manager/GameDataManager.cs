@@ -64,7 +64,8 @@ public static class GameDataManager
         gameData.unlockedDoors = Player.unlockedDoors;
         gameData.revealedDialog = Player.revealedDialog;
         gameData.revealedTutorial = Player.revealedTutorial;
-        gameData.boxesPos = Player.boxesPos.Values.ToArray<Vector3>();
+        gameData.boxesPos = Player.boxesPos.Values.ToArray<Vector3>(); //
+        Debug.Log(gameData.boxesPos + "posisi box");
         gameData.boxesName = Player.boxesPos.Keys.ToArray<string>();
         gameData.obtainedNotesTitle = Player.obtainedNotes.Keys.ToArray<string>();
         gameData.obtainedNotesContent = Player.obtainedNotes.Values.ToArray<string>();
