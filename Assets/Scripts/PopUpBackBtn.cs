@@ -57,6 +57,6 @@ public class PopUpBackBtn : MonoBehaviour
         secondParent = firstParent.transform.parent.gameObject;
         firstParent.transform.position = PopUpUIManager.Instance.OriPos();
         firstParent.SetActive(false);
-        secondParent.SetActive(false);
+        //secondParent.SetActive(false);
     }
 }
