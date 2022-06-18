@@ -297,7 +297,7 @@ MonoBehaviour:
 
     Kunci apa ini?'
   audioName: Kunci
-  photoSprite: {fileID: 21300000, guid: ee83640a459a3094f8c50c218b6f2efb, type: 3}
+  photoSprite: {fileID: 21300000, guid: 74404b64a45b8e24098bc55fb6b74417, type: 3}
   isUIShown: 0
 --- !u!1 &56564591
 GameObject:

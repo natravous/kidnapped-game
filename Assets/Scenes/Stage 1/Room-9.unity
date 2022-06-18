@@ -2903,7 +2903,7 @@ MonoBehaviour:
   objectTypes: 0
   dialogText: Ada kunci lagi.
   audioName: Kunci
-  photoSprite: {fileID: 21300000, guid: 3ef94f70c1641aa45b192c4c9e8555af, type: 3}
+  photoSprite: {fileID: 21300000, guid: 4436ce18eda26524385d788952f1010d, type: 3}
   isUIShown: 0
 --- !u!114 &1387194961
 MonoBehaviour:
