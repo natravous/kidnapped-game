@@ -2183,7 +2183,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425368964}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e464aa6ade1596343927e5201ad5e674, type: 3}
   m_Name: 
@@ -2273,7 +2273,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425368964}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f0359326d9dabf4cb87b4078d7537ca, type: 3}
   m_Name: 
@@ -3229,6 +3229,7 @@ GameObject:
   - component: {fileID: 1851491965}
   - component: {fileID: 1851491964}
   - component: {fileID: 1851491963}
+  - component: {fileID: 1851491967}
   m_Layer: 0
   m_Name: Kertas2
   m_TagString: Untagged
@@ -3348,6 +3349,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1851491967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851491962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd37b86ba0bb32a4a84001559b7c6a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namaObjek: Note
+  isActive: 0
+  objectName: 3
+  kunci: {fileID: 1425368966}
+  obj: {fileID: 1425368969}
+  counter: 0
 --- !u!1 &1869837226
 GameObject:
   m_ObjectHideFlags: 0
