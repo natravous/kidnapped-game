@@ -4,18 +4,6 @@ using UnityEngine;
 
 public class NonAktifState : ObjectState
 {
-    //public NonAktifState(InteractiveObject objek) : base(objek)
-    //{
-    //}
-
-    //public override void NonAktif()
-    //{
-    //    Debug.Log("Cek nonaktif state");
-    //    _objek.SetState(new AktifState(_objek));
-    //}
-
-
-    
     public override void EnterState(ObjectScript objek)
     {
         Debug.Log(objek.namaObjek + " Tidak Aktif!");
@@ -59,12 +47,19 @@ public class NonAktifState : ObjectState
 
         }
 
-
         //else if (Input.GetKeyDown(KeyCode.E) && objek.objectName == ObjectScript.ObjectName.Lemari && objek.isActive == false)
         //{
         //    Debug.Log("LEmari bego");
         //}
     }
 
-   
+    //public NonAktifState(InteractiveObject objek) : base(objek)
+    //{
+    //}
+
+    //public override void NonAktif()
+    //{
+    //    Debug.Log("Cek nonaktif state");
+    //    _objek.SetState(new AktifState(_objek));
+    //}
 }
