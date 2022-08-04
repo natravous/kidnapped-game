@@ -62,12 +62,14 @@ public class NoteInventoryUI : MonoBehaviour
             {
                 GameObject obj = Instantiate(pocketItem, Vector3.zero, Quaternion.identity, pocketItemParent.transform);
                 //KeyObject objKunci = gameObject.GetComponent<KeyObject>();//
-                obj.transform.gameObject.GetComponent<Button>().onClick.AddListener(() => 
-                {
-                    //ShowImage(obj);
-                    GameObject fotoUI = PopUpUIManager.Instance.ActivateUI(items.getImage(kunci.ToString())); //
 
-                });
+                //pocket click object
+                //obj.transform.gameObject.GetComponent<Button>().onClick.AddListener(() => 
+                //{
+                //    //ShowImage(obj);
+                //    GameObject fotoUI = PopUpUIManager.Instance.ActivateUI(items.getImage(kunci.ToString())); //
+
+                //});
                 obj.transform.GetChild(0).gameObject.GetComponent<Text>().text = Space(kunci.ToString());
                 //Debug.Log("HALLO KUNCI:" + objKey.ToString());
                 obj.transform.GetChild(1).gameObject.GetComponent<Image>().sprite = items.getImage(kunci.ToString()); //

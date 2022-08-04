@@ -319,6 +319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlackScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 4178081711263975119, guid: 7b546d6ddf818e9469f18184973f22a7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b546d6ddf818e9469f18184973f22a7, type: 3}
 --- !u!1001 &74291655
@@ -959,7 +963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -449.07672}
+  m_AnchoredPosition: {x: 326, y: -494.07672}
   m_SizeDelta: {x: 194, y: 458.15344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1024213163
@@ -1314,7 +1318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 251}
+  m_AnchoredPosition: {x: -276, y: 278}
   m_SizeDelta: {x: 2392, y: 1824.3672}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1633305208
@@ -1391,7 +1395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -120}
+  m_AnchoredPosition: {x: 326, y: -165}
   m_SizeDelta: {x: 348.66666, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1794231849
